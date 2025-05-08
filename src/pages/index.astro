@@ -1,0 +1,17 @@
+---
+import Counter from '../components/Counter.jsx';
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Página con Astro, Tailwind y React</title>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-50">
+    <main class="text-center">
+      <h1 class="text-2xl font-bold mb-4">¡Hola desde Astro!</h1>
+      <Counter client:load />
+    </main>
+  </body>
+</html>
